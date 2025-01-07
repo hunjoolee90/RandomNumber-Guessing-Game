@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Random Number Game</h1>
+    <h2>Can you guess the number in just 5 attempts?</h2>
+    <p id="generate-number">
+      Generate a number between 0 and
+      <input type="number" />
+      <button>Play!</button>
+    </p>
+    <p class="hidden" id="start-message">
+      The machine has chosen the number. Now guess!
+    </p>
+    <p id="guess-number">
+      Guess the number:
+      <input type="number" />
+      <button>Check</button>
+    </p>
+    <p class="hidden" id="game-progress"></p>
+    <h2 class="hidden" id="result"></h2>
+    <button class="hidden" id="reset">Play Again</button>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
